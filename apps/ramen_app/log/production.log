@@ -1,0 +1,23 @@
+D, [2020-08-05T18:39:39.087119 #2223] DEBUG -- :   [1m[35m (1780.7ms)[0m  [1m[35mCREATE DATABASE "ramen_app_production" ENCODING = 'unicode'[0m
+I, [2020-08-05T18:45:44.350776 #2357]  INFO -- : [4baf8b0b-5b7b-4981-a3e1-4aaac2bf6b86] Started GET "/member" for 172.19.0.1 at 2020-08-05 18:45:44 +0000
+I, [2020-08-05T18:45:44.356017 #2357]  INFO -- : [4baf8b0b-5b7b-4981-a3e1-4aaac2bf6b86] Processing by Member::TopController#index as HTML
+I, [2020-08-05T18:45:44.374954 #2357]  INFO -- : [4baf8b0b-5b7b-4981-a3e1-4aaac2bf6b86]   Rendering member/top/index.html.erb within layouts/member
+I, [2020-08-05T18:45:44.380960 #2357]  INFO -- : [4baf8b0b-5b7b-4981-a3e1-4aaac2bf6b86]   Rendered member/top/index.html.erb within layouts/member (Duration: 5.5ms | Allocations: 104)
+I, [2020-08-05T18:45:44.390519 #2357]  INFO -- : [4baf8b0b-5b7b-4981-a3e1-4aaac2bf6b86]   Rendered common/_header.html.erb (Duration: 3.2ms | Allocations: 85)
+I, [2020-08-05T18:45:44.395564 #2357]  INFO -- : [4baf8b0b-5b7b-4981-a3e1-4aaac2bf6b86]   Rendered common/_footer.html.erb (Duration: 2.1ms | Allocations: 85)
+I, [2020-08-05T18:45:44.396204 #2357]  INFO -- : [4baf8b0b-5b7b-4981-a3e1-4aaac2bf6b86] Completed 200 OK in 40ms (Views: 33.6ms | Allocations: 2808)
+D, [2020-08-05T18:53:41.295411 #2373] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[35mCREATE DATABASE "ramen_app_production" ENCODING = 'unicode'[0m
+I, [2020-08-05T18:55:01.525210 #2492]  INFO -- : [71045fc1-9472-49c9-b13e-d04ca728161d] Started GET "/manager" for 172.19.0.1 at 2020-08-05 18:55:01 +0000
+I, [2020-08-05T18:55:01.530353 #2492]  INFO -- : [71045fc1-9472-49c9-b13e-d04ca728161d] Processing by Manager::TopController#index as HTML
+I, [2020-08-05T18:55:01.547945 #2492]  INFO -- : [71045fc1-9472-49c9-b13e-d04ca728161d]   Rendering manager/top/index.html.erb within layouts/manager
+I, [2020-08-05T18:55:01.552394 #2492]  INFO -- : [71045fc1-9472-49c9-b13e-d04ca728161d]   Rendered manager/top/index.html.erb within layouts/manager (Duration: 4.0ms | Allocations: 104)
+I, [2020-08-05T18:55:01.560839 #2492]  INFO -- : [71045fc1-9472-49c9-b13e-d04ca728161d]   Rendered common/_header.html.erb (Duration: 1.9ms | Allocations: 85)
+I, [2020-08-05T18:55:01.566578 #2492]  INFO -- : [71045fc1-9472-49c9-b13e-d04ca728161d]   Rendered common/_footer.html.erb (Duration: 2.0ms | Allocations: 85)
+I, [2020-08-05T18:55:01.567134 #2492]  INFO -- : [71045fc1-9472-49c9-b13e-d04ca728161d] Completed 200 OK in 36ms (Views: 31.1ms | Allocations: 2307)
+I, [2020-08-05T18:55:08.283541 #2492]  INFO -- : [7bae6831-2ec3-4b78-81e6-4b3552b0b91a] Started GET "/member" for 172.19.0.1 at 2020-08-05 18:55:08 +0000
+I, [2020-08-05T18:55:08.284706 #2492]  INFO -- : [7bae6831-2ec3-4b78-81e6-4b3552b0b91a] Processing by Member::TopController#index as HTML
+I, [2020-08-05T18:55:08.292871 #2492]  INFO -- : [7bae6831-2ec3-4b78-81e6-4b3552b0b91a]   Rendering member/top/index.html.erb within layouts/member
+I, [2020-08-05T18:55:08.296265 #2492]  INFO -- : [7bae6831-2ec3-4b78-81e6-4b3552b0b91a]   Rendered member/top/index.html.erb within layouts/member (Duration: 2.9ms | Allocations: 83)
+I, [2020-08-05T18:55:08.299871 #2492]  INFO -- : [7bae6831-2ec3-4b78-81e6-4b3552b0b91a]   Rendered common/_header.html.erb (Duration: 0.0ms | Allocations: 6)
+I, [2020-08-05T18:55:08.300378 #2492]  INFO -- : [7bae6831-2ec3-4b78-81e6-4b3552b0b91a]   Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+I, [2020-08-05T18:55:08.300886 #2492]  INFO -- : [7bae6831-2ec3-4b78-81e6-4b3552b0b91a] Completed 200 OK in 16ms (Views: 15.0ms | Allocations: 1541)
