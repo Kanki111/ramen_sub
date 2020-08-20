@@ -1,0 +1,70 @@
+/* line 1, app/assets/stylesheets/member/layout.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+/* line 6, app/assets/stylesheets/member/layout.scss */
+div#wrapper {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 100%;
+  margin: 0 auto;
+  padding-bottom: 48px;
+  background-color: #EDF2F4;
+}
+
+/* line 14, app/assets/stylesheets/member/layout.scss */
+header {
+  padding: 5px;
+  background-color: #252E33;
+  color: #ffffff;
+  height: 64px;
+}
+
+/* line 19, app/assets/stylesheets/member/layout.scss */
+header span.logo-mark {
+  font-weight: bold;
+}
+
+/* line 23, app/assets/stylesheets/member/layout.scss */
+footer {
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+  background-color: #252E33;
+  color: white;
+  height: 85px;
+}
+
+/* line 30, app/assets/stylesheets/member/layout.scss */
+footer p {
+  text-align: center;
+  padding: 5px;
+  padding-top: 30px;
+  margin: 0;
+}
+
+/* line 35, app/assets/stylesheets/member/layout.scss */
+footer p span {
+  padding-right: 100px;
+}
+/*
+
+ */
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
