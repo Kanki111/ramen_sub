@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>松崎歓喜のラーメンWebアプリです。</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "member", media: "all", "data-turbolinks-track": "reload" %>
+    <%= javascript_pack_tag "application", "data-turbolinks-track": "reload" %>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <%= render "member/common/header" %>
+      <div id= "container">
+        <%= yield %>
+      </div>
+      <%= render "common/footer" %>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script>
+    $(function () {
+      $(".top_page").mouseover(function () {
+        $(".top_page").addClass("hover_tag");
+     });
+   });
+   $(function () {
+      $(".post_page").mouseover(function () {
+        $(this).addClass("hover_tag");
+   });
+   });
+   $(function () {
+      $(".table_page").mouseover(function () {
+        $(this).addClass("hover_tag");
+   });
+   });
+   $(function () {
+      $(".account_page").mouseover(function () {
+        $(this).addClass("hover_tag");
+   });
+   });
+   $(function () {
+    $(".top_page").mouseout(function () {
+      $(this).removeClass("hover_tag");
+   });
+ });
+ $(function () {
+    $(".post_page").mouseout(function () {
+      $(this).removeClass("hover_tag");
+ });
+ });
+ $(function () {
+    $(".table_page").mouseout(function () {
+      $(this).removeClass("hover_tag");
+ });
+ });
+ $(function () {
+    $(".account_page").mouseout(function () {
+      $(this).removeClass("hover_tag");
+ });
+ });
+  </script>
+  </body>
+</html>

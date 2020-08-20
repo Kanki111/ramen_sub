@@ -1,0 +1,10 @@
+<header>
+  <span class="logo-mark">Ramen_app</span>
+  <%=
+    if login_manager_now
+      link_to "ログアウト", :manager_session, method: :delete
+    else
+      link_to "ログイン", :manager_login
+    end
+   %>
+</header>

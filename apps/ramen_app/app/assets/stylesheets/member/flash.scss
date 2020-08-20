@@ -1,0 +1,17 @@
+header{
+    span.notice, span.alert {
+        display: inline-block;
+        padding: 8px 16px;
+        margin: 0 auto;
+        font-size: 12px;
+        color: #323232;
+    }
+
+    span.notice{
+        background-color: #00cc00;
+    }
+
+    span.alert{
+        background-color: #cc0000;
+    }
+}

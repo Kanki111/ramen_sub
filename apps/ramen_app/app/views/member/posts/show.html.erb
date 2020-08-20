@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+<div class="form_inner">
+<h1 class="post_title">お勧めのラーメン屋さん</h1>
+<p class="post_subtitle">RECOMEND</p>
+
+<table class="post_table">
+  <thead>
+    <tr>
+      <th class="show_image">
+        <%= image_tag @member_post.image.to_s %>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td class="show_content">
+      お店の名前：<%= @member_post.title %>
+    </td>
+  </tr>
+  <tr>
+    <td class="show_content">
+      お店の場所：<%= @member_post.place %>
+    </td>
+  </tr>
+  </tbody>
+</table>
+
+
+<%= link_to 'Edit', edit_member_post_path(@member_post) %> |
+<%= link_to 'Back', member_posts_path %>
+</div>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>松崎歓喜のラーメンWebアプリです。</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "manager", media: "all", "data-turbolinks-track": "reload" %>
+    <%= javascript_pack_tag "application", "data-turbolinks-track": "reload" %>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <%= render "manager/common/header" %>
+      <div id= "container">
+        <%= yield %>
+      </div>
+      <%= render "common/footer" %>
+    </div>
+  </body>
+</html>

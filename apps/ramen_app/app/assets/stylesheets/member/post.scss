@@ -1,0 +1,98 @@
+.post_title{
+    font-size: 21px;
+    padding-top: 65px;
+    padding-bottom: 10px;
+    margin: 0;
+    line-height: 1rem;
+    text-align: center;
+}
+.post_subtitle{
+    font-size: 14px;
+    padding-top: 8px;
+    padding-bottom: 10px;
+    margin: 0;
+    line-height: 1rem;
+    text-align: center;
+    color: #04b2dd;
+}
+
+.post_table{
+    max-width: 1024px;
+    margin: 40px auto;
+
+    th{
+        border-bottom: dashed 1px #252E33;
+        padding: 32px 40px;
+    }
+    td{
+        border-bottom: dashed 1px #252E33;
+        padding: 32px 40px;
+    }
+}
+trix-editor {
+    display: block;
+    background-color: #ffffff;
+    height: 300px;
+}
+
+.form_content_label{
+    display: block;
+    padding: 10px 0px 10px 10px;
+    width: 100%;
+    height: 24px;
+
+}
+
+.form_inner{
+    max-width: 1024px;
+    margin: 40px auto;
+}
+.new_button{
+    position: fixed;
+    bottom: 121px;
+}
+.new_inner{
+    width: 976px;
+    margin: 0 auto;
+}
+
+.new_post_button{
+display: block;
+position: relative;
+width: 342px;
+padding: 0.8em;
+margin-top: 10px;
+margin-right: 8px;
+text-align: center;
+text-decoration: none;
+color: #fff;
+background: #00A0E2;
+height: 55px;
+margin: 160px auto 96px;
+border: solid 1px #EDF2F4;
+}
+
+.image{
+    width: 150px;
+    img{
+        width: 100%;
+    }
+}
+
+.form_content_text_field{
+    width: 300px;
+    background-color: #ffffff;
+    height: 32px;
+    border: 2px solid #cccccc;
+}
+
+#map{
+    height: 400px;
+  }
+
+  .show_image{
+      width: 100%;
+  }
+  .show_image img{
+    width: 100%;
+}

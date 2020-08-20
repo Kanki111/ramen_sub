@@ -1,0 +1,172 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+div#wrapper{
+    position: relative;
+    box-sizing: border-box;
+    min-height: 100%;
+    margin: 0 auto;
+    padding-bottom: 48px;
+    background-color: #EDF2F4;
+}
+header{
+    padding: 5px;
+    background-color: #252E33;
+    color: #ffffff;
+    height: 64px;
+    span.logo{
+        font-weight: bold;
+    }
+    a {
+        float: right;
+        color: #00A0E2;
+    }
+}
+footer{
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+    background-color: #252E33;
+    color: white;
+    height: 85px;
+    p {
+        text-align: center;
+        padding: 5px;
+        padding-top: 30px;
+        margin: 0;
+        span{
+            padding-right: 100px;
+        }
+    }
+}
+.selection{
+    display: inline-block;
+    position: absolute;
+    height: 48px;
+    right: 40px;
+    text-align: center;
+}
+.top_page{
+    display: inline-block;
+    width: 190px;
+    height: 48px;
+    padding-top: 29px;
+    padding-bottom: 8px;
+}
+.post_page{
+    display: inline-block;
+    width: 190px;
+    height: 48px;
+    padding-top: 29px;
+    padding-bottom: 8px;
+}
+.table_page{
+    display: inline-block;
+    width: 190px;
+    height: 48px;
+    padding-top: 29px;
+    padding-bottom: 8px;
+}
+.account_page{
+    display: inline-block;
+    width: 190px;
+    height: 48px;
+    padding-top: 29px;
+    padding-bottom: 8px;
+}
+.footer_logo{
+    display: inline-block;
+    width: 145px;
+    height: 48px;
+}
+.copy_right{
+    display: inline-block;
+    width: 400px;
+    height: 80px;
+}
+.tag{
+    color: #ffffff;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+
+.images_image{
+    width: 32%;
+    height: 200px;
+    display: inline-block;
+}
+
+.images_image img{
+    object-fit: cover;
+    width: 100%;
+    height: 200px;
+}
+.hover_tag{
+    background-color: #005071;
+}
+
+.new_password{
+    width: 300px;
+    background-color: #ffffff;
+    height: 32px;
+    border: 2px solid #cccccc;
+}
+.password_label{
+    padding: 10px 0px 10px 10px;
+    width: 100%;
+    height: 24px;
+    display: block;
+    text-align: left;
+}
+.password_content{
+    text-align: center;
+    height: 72px;
+    margin: 32px auto;
+    width: 360px;
+}
+#password-form{
+    margin-top: 96px;
+}
+
+.password_title{
+   color: #00A0E2;
+   text-align: center;
+   margin-top: 72px;
+}
+.pagination{
+    height: 140px;
+    text-align: center;
+}
+.page{
+    background-color: #00A0E2;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 6px;
+    margin: 0 2px;
+
+    a{
+        text-decoration: none;
+        color: #ffffff;
+    }
+}
+.current{
+    color: #00A0E2;
+    background-color: #ffffff;
+}
+.translation_missing{
+    color: #00A0E2;
+    margin: 0 0 0 8px;
+}
+#container{
+    padding-bottom: 64px;
+}
+div.field_with_errors {
+    display: inline;
+    padding: 0;
+    label{ color: #cc0000; }
+    input { background-color: #ffcccc;}
+}

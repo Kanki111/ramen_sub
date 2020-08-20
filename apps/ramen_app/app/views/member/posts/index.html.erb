@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="post_title">お勧めのラーメン屋さん</h1>
+<p class="post_subtitle">RECOMEND</p>
+
+<table class="post_table">
+  <thead>
+    <tr>
+      <th>Image</th>
+      <th>Store Name</th>
+      <th>Store Place</th>
+      <th>Type</th>
+      <th>SHOW</th>
+      <th>EDIT</th>
+      <th>DESTROY</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @member_posts.each do |member_post| %>
+      <tr>
+        <td class="image"><%= image_tag member_post.image.to_s %></td>
+        <td><%= member_post.title %></td>
+        <td><%= member_post.place %></td>
+        <td><%= member_post.ramen_type %></td>
+        <td><%= link_to '詳細', member_post %></td>
+        <td><%= link_to '編集', edit_member_post_path(member_post) %></td>
+        <td><%= link_to '削除', member_post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<%= paginate @member_posts %>

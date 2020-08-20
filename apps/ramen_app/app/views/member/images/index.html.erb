@@ -1,0 +1,12 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="post_title">お勧めのラーメン屋さん</h1>
+<p class="post_subtitle">RECOMEND</p>
+
+<div class="post_table">
+    <% @member_posts.each do |member_post| %>
+        <div class="images_image"><%= image_tag member_post.image.to_s %></div>
+    <% end %>
+</div>
+
+<%= paginate @member_posts %>

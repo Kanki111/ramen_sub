@@ -1,0 +1,37 @@
+<%= form_with(model: member_post, local: true) do |form| %>
+  <% if member_post.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(member_post.errors.count, "error") %> prohibited this member_post from being saved:</h2>
+
+      <ul>
+        <% member_post.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :店名, class: "form_content_label" %>
+    <%= form.text_field :title, class: "form_content_text_field" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :お店の場所, class: "form_content_label" %>
+    <%= form.text_field :place, class: "form_content_text_field" %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image, class: "form_content_label"  %>
+    <%=form.label "画像をアップロード" %><br><%= form.file_field :image %>
+  </div>
+
+  <div class="field">
+  <%= form.label :追加の画像やコメントなど, class: "form_content_label" %>
+  <%= form.rich_text_area :content %>
+</div>
+
+  <div class="actions">
+    <%= form.submit :投稿をする, class: "new_post_button" %>
+  </div>
+<% end %>

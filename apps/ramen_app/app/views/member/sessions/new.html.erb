@@ -1,0 +1,29 @@
+<div id="login-form">
+  <p class="login_title">Matsuzakiのサービスページのログイン画面です。</p>
+  <h1>Welcome to MY service login page</h1>
+
+
+<div id="formWrap">
+  <%= form_with model: @form, url: :member_session do |f| %>
+  <div class="formTable">
+  <table class="formTableContent">
+  <tbody>
+    <tr>
+    <td>
+        <%= f.text_field :email, :placeholder => "Enter your email..." %>
+    </td>
+    </tr>
+    <tr>
+    <td>
+        <%= f.password_field :password, :placeholder => "Enter your password..." %>
+    </td>
+    </tr>
+  </tbody>
+  </table>
+    <div>
+      <%= f.submit "ログイン" %>
+    </div>
+  </div>
+  <% end %>
+</div>
+</div>
