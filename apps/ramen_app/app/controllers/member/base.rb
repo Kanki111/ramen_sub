@@ -6,5 +6,11 @@ class Member::Base < ApplicationController
         end
     end
 
+    def authenticate_user
+        if @login_member_now == nil
+          redirect_to("/login")
+        end
+    end
     helper_method :login_member_now
+    before_action :authenticate_user, only: [:show, :edit, :update, :destroy]
 end

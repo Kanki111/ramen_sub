@@ -1,5 +1,6 @@
 class Member::PostsController < Member::Base
   before_action :set_member_post, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user, only: [:show, :edit, :update, :destroy]
 
   # GET /member/posts
   # GET /member/posts.json

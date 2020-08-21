@@ -21,25 +21,3 @@ require("@rails/actiontext")
 
 //= require underscore
 //= require gmaps/google
-
-
-$(function () {
-    $(".top_page").mouseover(function () {
-      $(this).addClass("hover_tag");
-   });
- });
- $(function () {
-    $(".post_page").mouseover(function () {
-      $(this).addClass("hover_tag");
- });
- });
- $(function () {
-    $(".table_page").mouseover(function () {
-      $(this).addClass("hover_tag");
- });
- });
- $(function () {
-    $(".account_page").mouseover(function () {
-      $(this).addClass("hover_tag");
- });
- });

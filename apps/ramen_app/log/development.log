@@ -30292,3 +30292,304 @@ Processing by Member::ImagesController#index as HTML
 Completed 200 OK in 102ms (Views: 95.9ms | ActiveRecord: 5.1ms | Allocations: 8684)
 
 
+DEPRECATION WARNING: The config.web_console.whitelisted_ips is deprecated and will be ignored in future release of web_console. Please use config.web_console.allowed_ips instead. (called from <main> at /apps/ramen_app/config/environment.rb:5)
+Started GET "/member/posts/new" for 192.168.80.1 at 2020-08-21 14:45:49 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (3.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Member::PostsController#new as HTML
+  Rendering member/posts/new.html.erb within layouts/member
+  Rendered member/posts/_form.html.erb (Duration: 1395.2ms | Allocations: 299298)
+  Rendered member/posts/new.html.erb within layouts/member (Duration: 1405.3ms | Allocations: 299743)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mRamenMember Load (3.5ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendered member/common/_header.html.erb (Duration: 33.5ms | Allocations: 5593)
+  Rendered common/_footer.html.erb (Duration: 2.4ms | Allocations: 99)
+Completed 200 OK in 1753ms (Views: 1678.0ms | ActiveRecord: 29.9ms | Allocations: 323241)
+
+
+Started GET "/member/posts" for 192.168.80.1 at 2020-08-21 14:45:58 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PostsController#index as HTML
+  Rendering member/posts/index.html.erb within layouts/member
+  [1m[36mMember::Post Load (4.5ms)[0m  [1m[34mSELECT "member_posts".* FROM "member_posts" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/member/posts/index.html.erb:20
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT COUNT(*) FROM "member_posts"[0m
+  ↳ app/views/member/posts/index.html.erb:33
+  Rendered member/posts/index.html.erb within layouts/member (Duration: 49.0ms | Allocations: 8036)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mRamenMember Load (1.4ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendered member/common/_header.html.erb (Duration: 3.2ms | Allocations: 693)
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 148ms (Views: 132.9ms | ActiveRecord: 7.4ms | Allocations: 12764)
+
+
+Started GET "/member/posts/3" for 192.168.80.1 at 2020-08-21 14:46:05 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMember::Post Load (2.7ms)[0m  [1m[34mSELECT "member_posts".* FROM "member_posts" WHERE "member_posts"."id" = $1 LIMIT $2[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/member/posts_controller.rb:68:in `set_member_post'
+  Rendering member/posts/show.html.erb within layouts/member
+  Rendered member/posts/show.html.erb within layouts/member (Duration: 3.5ms | Allocations: 381)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mRamenMember Load (1.4ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendered member/common/_header.html.erb (Duration: 3.6ms | Allocations: 690)
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 102ms (Views: 86.9ms | ActiveRecord: 4.1ms | Allocations: 5726)
+
+
+Started GET "/member/posts/new" for 192.168.80.1 at 2020-08-21 14:46:27 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PostsController#new as HTML
+  Rendering member/posts/new.html.erb within layouts/member
+  Rendered member/posts/_form.html.erb (Duration: 3.6ms | Allocations: 1528)
+  Rendered member/posts/new.html.erb within layouts/member (Duration: 4.7ms | Allocations: 1601)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mRamenMember Load (1.4ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendered member/common/_header.html.erb (Duration: 3.4ms | Allocations: 705)
+  Rendered common/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 104ms (Views: 101.8ms | ActiveRecord: 1.4ms | Allocations: 6110)
+
+
+Started GET "/member/posts" for 192.168.80.1 at 2020-08-21 14:47:32 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PostsController#index as HTML
+  Rendering member/posts/index.html.erb within layouts/member
+  [1m[36mMember::Post Load (1.9ms)[0m  [1m[34mSELECT "member_posts".* FROM "member_posts" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/member/posts/index.html.erb:20
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "member_posts"[0m
+  ↳ app/views/member/posts/index.html.erb:33
+  Rendered member/posts/index.html.erb within layouts/member (Duration: 12.6ms | Allocations: 5580)
+[Webpacker] Compiling...
+Started GET "/member/images/index" for 192.168.80.1 at 2020-08-21 14:47:34 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::ImagesController#index as HTML
+  Rendering member/images/index.html.erb within layouts/member
+  [1m[36mMember::Post Load (3.8ms)[0m  [1m[34mSELECT "member_posts".* FROM "member_posts" LIMIT $1 OFFSET $2[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  ↳ app/views/member/images/index.html.erb:7
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT COUNT(*) FROM "member_posts"[0m
+  ↳ app/views/member/images/index.html.erb:12
+  Rendered member/images/index.html.erb within layouts/member (Duration: 17.1ms | Allocations: 4389)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /apps/ramen_app/public/packs
+[Webpacker] Hash: 35a0473fe6ec7ff7fdf6
+Version: webpack 4.44.1
+Time: 5664ms
+Built at: 08/21/2020 2:47:44 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-4c1eeb30d0c9e6bc70ea.js    464 KiB  application  [emitted] [immutable]  application
+js/application-4c1eeb30d0c9e6bc70ea.js.map    522 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-4c1eeb30d0c9e6bc70ea.js js/application-4c1eeb30d0c9e6bc70ea.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 847 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 9 hidden modules
+
+  [1m[36mRamenMember Load (1.5ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendered member/common/_header.html.erb (Duration: 3.7ms | Allocations: 695)
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 12252ms (Views: 12245.8ms | ActiveRecord: 5.3ms | Allocations: 30452)
+
+
+[Webpacker] Compiled all packs in /apps/ramen_app/public/packs
+[Webpacker] Hash: 35a0473fe6ec7ff7fdf6
+Version: webpack 4.44.1
+Time: 5453ms
+Built at: 08/21/2020 2:47:47 PM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-4c1eeb30d0c9e6bc70ea.js    464 KiB  application  [emitted] [immutable]  application
+js/application-4c1eeb30d0c9e6bc70ea.js.map    522 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-4c1eeb30d0c9e6bc70ea.js js/application-4c1eeb30d0c9e6bc70ea.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 847 bytes {application} [built]
+[./node_modules/webpack/buildin/global.js] (webpack)/buildin/global.js 905 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 9 hidden modules
+
+  [1m[36mRamenMember Load (3.6ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendered member/common/_header.html.erb (Duration: 6.5ms | Allocations: 707)
+  Rendered common/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 11113ms (Views: 11096.8ms | ActiveRecord: 9.8ms | Allocations: 13511)
+
+
+Started GET "/member/posts?page=2" for 192.168.80.1 at 2020-08-21 14:48:19 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PostsController#index as HTML
+  Parameters: {"page"=>"2"}
+  Rendering member/posts/index.html.erb within layouts/member
+  [1m[36mMember::Post Load (2.6ms)[0m  [1m[34mSELECT "member_posts".* FROM "member_posts" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 5]]
+  ↳ app/views/member/posts/index.html.erb:20
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "member_posts"[0m
+  ↳ app/views/member/posts/index.html.erb:33
+  Rendered member/posts/index.html.erb within layouts/member (Duration: 33.3ms | Allocations: 7710)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mRamenMember Load (1.3ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendered member/common/_header.html.erb (Duration: 3.4ms | Allocations: 691)
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 128ms (Views: 119.0ms | ActiveRecord: 6.0ms | Allocations: 12167)
+
+
+Started GET "/member/images/index" for 192.168.80.1 at 2020-08-21 15:19:49 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::ImagesController#index as HTML
+  Rendering member/images/index.html.erb within layouts/member
+  [1m[36mMember::Post Load (4.1ms)[0m  [1m[34mSELECT "member_posts".* FROM "member_posts" LIMIT $1 OFFSET $2[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  ↳ app/views/member/images/index.html.erb:7
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT COUNT(*) FROM "member_posts"[0m
+  ↳ app/views/member/images/index.html.erb:12
+  Rendered member/images/index.html.erb within layouts/member (Duration: 13.5ms | Allocations: 4208)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mRamenMember Load (4.0ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendered member/common/_header.html.erb (Duration: 7.5ms | Allocations: 706)
+  Rendered common/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+Completed 200 OK in 94ms (Views: 82.9ms | ActiveRecord: 10.2ms | Allocations: 8758)
+
+
+Started GET "/member/images/index" for 192.168.80.1 at 2020-08-21 15:29:12 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::ImagesController#index as HTML
+  Rendering member/images/index.html.erb within layouts/member
+  [1m[36mMember::Post Load (4.8ms)[0m  [1m[34mSELECT "member_posts".* FROM "member_posts" LIMIT $1 OFFSET $2[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  ↳ app/views/member/images/index.html.erb:7
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "member_posts"[0m
+  ↳ app/views/member/images/index.html.erb:12
+  Rendered member/images/index.html.erb within layouts/member (Duration: 26.2ms | Allocations: 9906)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mRamenMember Load (4.7ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendered member/common/_header.html.erb (Duration: 20.7ms | Allocations: 4723)
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 160ms (Views: 121.7ms | ActiveRecord: 12.3ms | Allocations: 19905)
+
+
+Started DELETE "/member/session" for 192.168.80.1 at 2020-08-21 15:29:16 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0yW2B0f1POLxSBVlsXO+08WdeNcXnvnLq0WHFdCJeblcKUhRBe5x2WieVa7OgNnSV/bkQOgzsW2C56/SAcEMng=="}
+Redirected to http://localhost:3000/member/login
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 390)
+
+
+Started GET "/member/login" for 192.168.80.1 at 2020-08-21 15:29:16 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::SessionsController#new as HTML
+  Rendering member/sessions/new.html.erb within layouts/member
+  Rendered member/sessions/new.html.erb within layouts/member (Duration: 6.3ms | Allocations: 689)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 71)
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 124ms (Views: 114.3ms | ActiveRecord: 0.0ms | Allocations: 5206)
+
+
+Started GET "/member/posts" for 192.168.80.1 at 2020-08-21 15:29:20 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+  
+NoMethodError (undefined method `efore_action' for Member::PostsController:Class
+Did you mean?  before_action):
+  
+app/controllers/member/posts_controller.rb:3:in `<class:PostsController>'
+app/controllers/member/posts_controller.rb:1:in `<main>'
+Started GET "/member/posts" for 192.168.80.1 at 2020-08-21 15:29:37 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PostsController#index as HTML
+  Rendering member/posts/index.html.erb within layouts/member
+  [1m[36mMember::Post Load (1.5ms)[0m  [1m[34mSELECT "member_posts".* FROM "member_posts" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/member/posts/index.html.erb:20
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "member_posts"[0m
+  ↳ app/views/member/posts/index.html.erb:33
+  Rendered member/posts/index.html.erb within layouts/member (Duration: 48.7ms | Allocations: 12236)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 140ms (Views: 92.6ms | ActiveRecord: 33.0ms | Allocations: 17703)
+
+
+Started GET "/member/images/index" for 192.168.80.1 at 2020-08-21 15:29:49 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::ImagesController#index as HTML
+  Rendering member/images/index.html.erb within layouts/member
+  [1m[36mMember::Post Load (1.5ms)[0m  [1m[34mSELECT "member_posts".* FROM "member_posts" LIMIT $1 OFFSET $2[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  ↳ app/views/member/images/index.html.erb:7
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "member_posts"[0m
+  ↳ app/views/member/images/index.html.erb:12
+  Rendered member/images/index.html.erb within layouts/member (Duration: 10.3ms | Allocations: 4095)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 57)
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 100ms (Views: 95.4ms | ActiveRecord: 2.9ms | Allocations: 8111)
+
+
+Started GET "/member/images/index" for 192.168.80.1 at 2020-08-21 15:30:31 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::ImagesController#index as HTML
+  Rendering member/images/index.html.erb within layouts/member
+  [1m[36mMember::Post Load (1.9ms)[0m  [1m[34mSELECT "member_posts".* FROM "member_posts" LIMIT $1 OFFSET $2[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  ↳ app/views/member/images/index.html.erb:7
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "member_posts"[0m
+  ↳ app/views/member/images/index.html.erb:12
+  Rendered member/images/index.html.erb within layouts/member (Duration: 48.4ms | Allocations: 10090)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 58)
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 165ms (Views: 127.8ms | ActiveRecord: 19.6ms | Allocations: 15476)
+
+
+Started GET "/member/image" for 192.168.80.1 at 2020-08-21 15:30:38 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (No route matches [GET] "/member/image"):
+  
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:36:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/member" for 192.168.80.1 at 2020-08-21 15:30:47 +0000
+Cannot render console from 192.168.80.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::TopController#index as HTML
+  Rendering member/top/index.html.erb within layouts/member
+  Rendered member/top/index.html.erb within layouts/member (Duration: 2.7ms | Allocations: 84)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 67)
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 81ms (Views: 80.2ms | ActiveRecord: 0.0ms | Allocations: 4133)
+
+
