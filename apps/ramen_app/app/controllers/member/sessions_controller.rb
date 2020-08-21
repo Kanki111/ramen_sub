@@ -17,7 +17,7 @@ class Member::SessionsController < Member::Base
         if ramen_member
             session[:ramen_member_id] = ramen_member.id
             flash.notice = "ログインに成功しました。"
-            redirect_to :member_root
+            redirect_to :member_images_index
         else
             flash.now.alert = "メールアドレスまたはパスワードが違います。"
             render action: "new"
@@ -27,6 +27,6 @@ class Member::SessionsController < Member::Base
     def destroy
         session.delete(:ramen_member_id)
         flash.notice = "ログアウトしました。"
-        redirect_to :member_root
+        redirect_to :member_login
     end
 end

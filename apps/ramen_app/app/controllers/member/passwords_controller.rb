@@ -12,7 +12,7 @@ class Member::PasswordsController < Member::Base
         @change_password.object = login_member_now
         if @change_password.save
             flash.notice ="パスワードを変更しました。"
-            redirect_to :edit_member_password
+            render action: "edit"
         else
             flash.now.alert = "入力に誤りがあります。"
             render action: "edit"
@@ -21,7 +21,7 @@ class Member::PasswordsController < Member::Base
 
     private def ramen_member_params
         params.require(:member_change_password).permit(
-            :current_password, :new_password, :comfirm_new_password
+            :current_password, :new_password, :confirmation_new_password
         )
     end
 end

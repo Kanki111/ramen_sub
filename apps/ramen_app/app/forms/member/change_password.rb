@@ -2,7 +2,7 @@ class Member::ChangePassword
     include ActiveModel::Model
 
     attr_accessor :object, :current_password, :new_password,
-      :confirm_new_password
+      :confirmation_new_password
     validates :new_password, presence: true, confirmation: true
 
     validate do
