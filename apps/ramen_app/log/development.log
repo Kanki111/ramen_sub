@@ -32404,3 +32404,881 @@ Processing by Member::ImagesController#index as HTML
 Completed 200 OK in 119ms (Views: 110.7ms | ActiveRecord: 7.0ms | Allocations: 10852)
 
 
+DEPRECATION WARNING: The config.web_console.whitelisted_ips is deprecated and will be ignored in future release of web_console. Please use config.web_console.allowed_ips instead. (called from <main> at /apps/ramen_app/config/environment.rb:5)
+Started GET "/member/images/index" for 192.168.112.1 at 2020-08-22 17:24:41 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (3.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Member::ImagesController#index as HTML
+  Rendering member/images/index.html.erb within layouts/member
+  [1m[36mMember::Post Load (3.3ms)[0m  [1m[34mSELECT "member_posts".* FROM "member_posts" LIMIT $1 OFFSET $2[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  ↳ app/views/member/images/index.html.erb:7
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT COUNT(*) FROM "member_posts"[0m
+  ↳ app/views/member/images/index.html.erb:12
+  Rendered common/_footer.html.erb (Duration: 2.2ms | Allocations: 100)
+  Rendered member/images/index.html.erb within layouts/member (Duration: 362.7ms | Allocations: 104274)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mRamenMember Load (4.3ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendered member/common/_header.html.erb (Duration: 36.4ms | Allocations: 5497)
+Completed 200 OK in 606ms (Views: 528.0ms | ActiveRecord: 39.2ms | Allocations: 121727)
+
+
+Started GET "/member/images/index" for 192.168.112.1 at 2020-08-22 17:25:00 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::ImagesController#index as HTML
+  Rendering member/images/index.html.erb within layouts/member
+  [1m[36mMember::Post Load (2.1ms)[0m  [1m[34mSELECT "member_posts".* FROM "member_posts" LIMIT $1 OFFSET $2[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  ↳ app/views/member/images/index.html.erb:7
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "member_posts"[0m
+  ↳ app/views/member/images/index.html.erb:12
+  Rendered common/_footer.html.erb (Duration: 1.9ms | Allocations: 101)
+  Rendered member/images/index.html.erb within layouts/member (Duration: 53.5ms | Allocations: 8237)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mRamenMember Load (1.4ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendered member/common/_header.html.erb (Duration: 6.6ms | Allocations: 833)
+Completed 200 OK in 167ms (Views: 154.0ms | ActiveRecord: 5.9ms | Allocations: 13595)
+
+
+Started GET "/member/password" for 192.168.112.1 at 2020-08-22 17:25:03 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#show as HTML
+Redirected to http://localhost:3000/member/password/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 331)
+
+
+Started GET "/member/password/edit" for 192.168.112.1 at 2020-08-22 17:25:03 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#edit as HTML
+  [1m[36mRamenMember Load (1.9ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 12.3ms | Allocations: 3549)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 64)
+Completed 200 OK in 113ms (Views: 84.7ms | ActiveRecord: 1.9ms | Allocations: 8789)
+
+
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 17:25:17 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"7ASqkjsnqYRWOhHkJdSoG8XBfFR53m3D/rPqD6WxDQJ6xUVK1MGIYIzZJA14tLzSgcsGSraomc17hXsTT0sHYA==", "current_password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "confirmation_new_password"=>"[FILTERED]", "commit"=>"変更"}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.0ms | Allocations: 660)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: member_change_password):
+  
+app/controllers/member/passwords_controller.rb:23:in `ramen_member_params'
+app/controllers/member/passwords_controller.rb:11:in `update'
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 17:26:26 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"fxgP84wywDyezzWzKX28QGqMoX5zbXcjv3N3G5dBZnHwFPGlzimNBwcZdXhWjttB+Oc96YzAP4WW0V/cRgkTVg==", "current_password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "confirmation_new_password"=>"[FILTERED]", "commit"=>"変更"}
+Completed 400 Bad Request in 17ms (ActiveRecord: 0.0ms | Allocations: 980)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: member_change_password):
+  
+app/controllers/member/passwords_controller.rb:23:in `ramen_member_params'
+app/controllers/member/passwords_controller.rb:11:in `update'
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 17:27:51 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+  
+AbstractController::ActionNotFound (The action 'update' could not be found for Member::PasswordsController):
+  
+actionpack (6.0.3.2) lib/abstract_controller/base.rb:131:in `process'
+actionview (6.0.3.2) lib/action_view/rendering.rb:39:in `process'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:190:in `dispatch'
+actionpack (6.0.3.2) lib/action_controller/metal.rb:254:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:33:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:49:in `block in serve'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.0.3.2) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.0.3.2) lib/action_dispatch/routing/route_set.rb:834:in `call'
+rack (2.2.3) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.3) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/cookies.rb:648:in `call'
+activerecord (6.0.3.2) lib/active_record/migration.rb:567:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.3.2) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.4) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.4) lib/web_console/middleware.rb:19:in `block in call'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.4) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.3.2) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.3.2) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.3.2) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.3) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.3.2) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.0.3.2) lib/action_dispatch/middleware/host_authorization.rb:82:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.3.2) lib/rails/engine.rb:527:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 17:32:05 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"fxgP84wywDyezzWzKX28QGqMoX5zbXcjv3N3G5dBZnHwFPGlzimNBwcZdXhWjttB+Oc96YzAP4WW0V/cRgkTVg==", "current_password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "confirmation_new_password"=>"[FILTERED]", "commit"=>"変更"}
+Completed 400 Bad Request in 7ms (ActiveRecord: 0.0ms | Allocations: 920)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: member_change_password):
+  
+app/controllers/member/passwords_controller.rb:23:in `ramen_member_params'
+app/controllers/member/passwords_controller.rb:11:in `update'
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 17:35:18 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"fxgP84wywDyezzWzKX28QGqMoX5zbXcjv3N3G5dBZnHwFPGlzimNBwcZdXhWjttB+Oc96YzAP4WW0V/cRgkTVg==", "current_password"=>"[FILTERED]", "new_password"=>"[FILTERED]", "confirmation_new_password"=>"[FILTERED]", "commit"=>"変更"}
+Completed 400 Bad Request in 8ms (ActiveRecord: 0.0ms | Allocations: 919)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: member_change_password):
+  
+app/controllers/member/passwords_controller.rb:23:in `ramen_member_params'
+app/controllers/member/passwords_controller.rb:11:in `update'
+DEPRECATION WARNING: The config.web_console.whitelisted_ips is deprecated and will be ignored in future release of web_console. Please use config.web_console.allowed_ips instead. (called from <main> at /apps/ramen_app/config/environment.rb:5)
+Started GET "/member/password" for 192.168.112.1 at 2020-08-22 17:58:47 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (3.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Member::PasswordsController#show as HTML
+Redirected to http://localhost:3000/member/password/edit
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 432)
+
+
+Started GET "/member/password/edit" for 192.168.112.1 at 2020-08-22 17:58:48 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#edit as HTML
+  [1m[36mRamenMember Load (4.5ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 2.8ms | Allocations: 103)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 22.1ms | Allocations: 1789)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 3.5ms | Allocations: 223)
+Completed 200 OK in 300ms (Views: 227.5ms | ActiveRecord: 21.5ms | Allocations: 17977)
+
+
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 17:59:03 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"QrIVhBpGCQzmLXbO+BdO7uoKy0o6ZJQsDwDAWsK8nwrNvuvSWF1EN3/7NgWH5CnveGFX3cXJ3IomouidE/TqLQ==", "member_change_password_form"=>"[FILTERED]", "commit"=>"変更"}
+  [1m[36mRamenMember Load (2.1ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/forms/member/change_password_form.rb:7:in `save'
+  [1m[36mRamenMember Update (2.0ms)[0m  [1m[33mUPDATE "ramen_members" SET "hashed_password" = $1, "updated_at" = $2 WHERE "ramen_members"."id" = $3[0m  [["hashed_password", "$2a$12$mNQAcqtZKDJjRIzjjBmeh.VZvzgBEREzg/bEdy26pF8Q8D.KMdevK"], ["updated_at", "2020-08-22 17:59:03.269724"], ["id", 1]]
+  ↳ app/forms/member/change_password_form.rb:7:in `save'
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/forms/member/change_password_form.rb:7:in `save'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 2.8ms | Allocations: 606)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 70)
+Completed 200 OK in 339ms (Views: 119.5ms | ActiveRecord: 7.6ms | Allocations: 7583)
+
+
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 17:59:17 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"/P7xwkPW5ftDUOip81VbaTLrjLOhqInUNXcJUglIeO1z8g+UAc2owNqGqGKMpjxooIAQJF4FwXIc1SGV2AANyg==", "member_change_password_form"=>"[FILTERED]", "commit"=>"変更"}
+  [1m[36mRamenMember Load (2.4ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/forms/member/change_password_form.rb:7:in `save'
+  [1m[36mRamenMember Update (2.0ms)[0m  [1m[33mUPDATE "ramen_members" SET "hashed_password" = $1, "updated_at" = $2 WHERE "ramen_members"."id" = $3[0m  [["hashed_password", "$2a$12$wiNN9aFGia/1B1RVpr2kHuesLILPKnoudnnrKf1TtifTTnMb4GIjK"], ["updated_at", "2020-08-22 17:59:18.218208"], ["id", 1]]
+  ↳ app/forms/member/change_password_form.rb:7:in `save'
+  [1m[35m (0.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/forms/member/change_password_form.rb:7:in `save'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 1.5ms | Allocations: 603)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 70)
+Completed 200 OK in 339ms (Views: 114.7ms | ActiveRecord: 5.7ms | Allocations: 7418)
+
+
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 17:59:27 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"esjzjCRW3SKhy90pENUU0idC2Ob5xMmN4xEyXFWNkKf1xA3aZk2QGTgdneJvJnPTtSlEcQZpgSvKsxqbhMXlgA==", "member_change_password_form"=>"[FILTERED]", "commit"=>"変更"}
+  [1m[36mRamenMember Load (1.9ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/forms/member/change_password_form.rb:7:in `save'
+  [1m[36mRamenMember Update (1.8ms)[0m  [1m[33mUPDATE "ramen_members" SET "hashed_password" = $1, "updated_at" = $2 WHERE "ramen_members"."id" = $3[0m  [["hashed_password", "$2a$12$Xwx1InCrLnlduv0zqPJ08OhPUmrlVud.HIWzEG2t6XKZPBCjOCzB2"], ["updated_at", "2020-08-22 17:59:28.127171"], ["id", 1]]
+  ↳ app/forms/member/change_password_form.rb:7:in `save'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/forms/member/change_password_form.rb:7:in `save'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 1.3ms | Allocations: 603)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 70)
+Completed 200 OK in 326ms (Views: 107.1ms | ActiveRecord: 4.6ms | Allocations: 7417)
+
+
+Started GET "/member/password" for 192.168.112.1 at 2020-08-22 18:10:23 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#show as HTML
+Redirected to http://localhost:3000/member/password/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 356)
+
+
+Started GET "/member/password/edit" for 192.168.112.1 at 2020-08-22 18:10:25 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#edit as HTML
+  [1m[36mRamenMember Load (4.8ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 1.7ms | Allocations: 732)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 84)
+Completed 200 OK in 109ms (Views: 70.6ms | ActiveRecord: 5.2ms | Allocations: 10202)
+
+
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 18:10:35 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"r/piS2LgDnKcJRtmfRd6Nx5COSgqafMiJOccPPSc5f0g9pwdIPtDSQXzW60C5B02jCmlv9XEu4QNRTT7JdSQ2g==", "member_change_password_form"=>"[FILTERED]", "commit"=>"変更"}
+  [1m[36mRamenMember Load (2.3ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/forms/member/change_password_form.rb:15:in `save'
+  [1m[36mRamenMember Update (1.6ms)[0m  [1m[33mUPDATE "ramen_members" SET "hashed_password" = $1, "updated_at" = $2 WHERE "ramen_members"."id" = $3[0m  [["hashed_password", "$2a$12$/IFt5NXgsFYT0TSOq7Lduu8mgxJOHOCY1jCOlzHZqzYhsLrxEjGyO"], ["updated_at", "2020-08-22 18:10:35.855709"], ["id", 1]]
+  ↳ app/forms/member/change_password_form.rb:15:in `save'
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/forms/member/change_password_form.rb:15:in `save'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 1.2ms | Allocations: 602)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 305ms (Views: 85.4ms | ActiveRecord: 6.5ms | Allocations: 7383)
+
+
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 18:10:49 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"cwRlsjjMnivdncwEu4DMMWiPakjz7FQmqIV8WWP3WYf8CJvketfTEERLjM/Ec6sw+uT23wxBHICBJ1Sesr8soA==", "member_change_password_form"=>"[FILTERED]", "commit"=>"変更"}
+  [1m[36mRamenMember Load (1.9ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/forms/member/change_password_form.rb:15:in `save'
+  [1m[36mRamenMember Update (1.6ms)[0m  [1m[33mUPDATE "ramen_members" SET "hashed_password" = $1, "updated_at" = $2 WHERE "ramen_members"."id" = $3[0m  [["hashed_password", "$2a$12$e7F57TWRDIGxvg0JZxZKZeDq/ahdPWQ/IP5WHY0bcWsTV3jdBg8xa"], ["updated_at", "2020-08-22 18:10:50.007848"], ["id", 1]]
+  ↳ app/forms/member/change_password_form.rb:15:in `save'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/forms/member/change_password_form.rb:15:in `save'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 1.5ms | Allocations: 602)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 70)
+Completed 200 OK in 298ms (Views: 79.1ms | ActiveRecord: 4.6ms | Allocations: 7397)
+
+
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 18:11:01 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"PsuoqH6GsnTd/DSoLugvP5gV0laEHlrTQ/xQBpzHJnWxx1b+PJ3/T0QqdGNRG0g+Cn5OwXuzEnVqXnjBTY9TUg==", "member_change_password_form"=>"[FILTERED]", "commit"=>"変更"}
+  [1m[36mRamenMember Load (2.0ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/forms/member/change_password_form.rb:15:in `save'
+  [1m[36mRamenMember Update (1.6ms)[0m  [1m[33mUPDATE "ramen_members" SET "hashed_password" = $1, "updated_at" = $2 WHERE "ramen_members"."id" = $3[0m  [["hashed_password", "$2a$12$ZypPr1f3Lcsd/GNlwlbusuNGyWGEuBw8CvNWf22OPUV5quroIJoCW"], ["updated_at", "2020-08-22 18:11:01.839367"], ["id", 1]]
+  ↳ app/forms/member/change_password_form.rb:15:in `save'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/forms/member/change_password_form.rb:15:in `save'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 1.1ms | Allocations: 602)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 276ms (Views: 60.5ms | ActiveRecord: 4.6ms | Allocations: 7389)
+
+
+Started GET "/member/password" for 192.168.112.1 at 2020-08-22 18:13:22 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#show as HTML
+Redirected to http://localhost:3000/member/password/edit
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 326)
+
+
+Started GET "/member/password/edit" for 192.168.112.1 at 2020-08-22 18:13:24 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#edit as HTML
+  [1m[36mRamenMember Load (2.0ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 2.3ms | Allocations: 731)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 84)
+Completed 200 OK in 166ms (Views: 81.7ms | ActiveRecord: 48.8ms | Allocations: 10360)
+
+
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 18:13:36 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"WpmCbVacwMhq6NrjFR42h5aN5hwoApIaO7hg4/JbUWrVlXw7FIeN8/M+mihq7VGGBOZ6i9ev2rwSGkgkIxMkTQ==", "member_change_password_form"=>"[FILTERED]", "commit"=>"変更"}
+  [1m[36mRamenMember Load (2.6ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 2.6ms | Allocations: 2915)
+
+
+  
+NameError (uninitialized constant Member::Authenticator):
+  
+app/forms/member/change_password_form.rb:8:in `block in <class:ChangePasswordForm>'
+app/forms/member/change_password_form.rb:14:in `save'
+app/controllers/member/passwords_controller.rb:13:in `update'
+Started DELETE "/member/session" for 192.168.112.1 at 2020-08-22 18:39:29 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"WpmCbVacwMhq6NrjFR42h5aN5hwoApIaO7hg4/JbUWrVlXw7FIeN8/M+mihq7VGGBOZ6i9ev2rwSGkgkIxMkTQ=="}
+Redirected to http://localhost:3000/member/login
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 370)
+
+
+Started GET "/member/login" for 192.168.112.1 at 2020-08-22 18:39:31 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::SessionsController#new as HTML
+  Rendering member/sessions/new.html.erb within layouts/member
+  Rendered member/sessions/new.html.erb within layouts/member (Duration: 3.4ms | Allocations: 637)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 71)
+Completed 200 OK in 88ms (Views: 81.0ms | ActiveRecord: 0.0ms | Allocations: 5047)
+
+
+Started POST "/member/session" for 192.168.112.1 at 2020-08-22 18:39:34 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"V39T6cYAZ18jVDXzetwbJVXsk4HiFKkhdh179/BKgxvYc62/hBsqZLqCdTgFL3wkx4cPFh254Ydfv1MwIQL2PA==", "member_login_form"=>{"email"=>"aaa", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mRamenMember Load (6.8ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE (LOWER(email) = 'aaa') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/member/sessions_controller.rb:15:in `create'
+  Rendering member/sessions/new.html.erb within layouts/member
+  Rendered member/sessions/new.html.erb within layouts/member (Duration: 0.6ms | Allocations: 281)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.1ms | Allocations: 58)
+Completed 200 OK in 97ms (Views: 74.4ms | ActiveRecord: 6.8ms | Allocations: 5563)
+
+
+Started POST "/member/session" for 192.168.112.1 at 2020-08-22 18:39:49 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"PNNa3JjZ0/qNToo6BEE5SqYVl6lNA0d6WrTQHciUG0ez36SK2sKewRSYyvF7sl5LNH4LPrKuD9xzFvjaGdxuYA==", "member_login_form"=>{"email"=>"kanki.m0924@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mRamenMember Load (2.0ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE (LOWER(email) = 'kanki.m0924@gmail.com') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/member/sessions_controller.rb:15:in `create'
+Redirected to http://localhost:3000/member/images/index
+Completed 302 Found in 10ms (ActiveRecord: 2.0ms | Allocations: 4674)
+
+
+Started GET "/member/images/index" for 192.168.112.1 at 2020-08-22 18:39:50 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::ImagesController#index as HTML
+  Rendering member/images/index.html.erb within layouts/member
+  [1m[36mMember::Post Load (4.1ms)[0m  [1m[34mSELECT "member_posts".* FROM "member_posts" LIMIT $1 OFFSET $2[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  ↳ app/views/member/images/index.html.erb:7
+  [1m[35m (2.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "member_posts"[0m
+  ↳ app/views/member/images/index.html.erb:12
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/images/index.html.erb within layouts/member (Duration: 379.3ms | Allocations: 103552)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mRamenMember Load (1.4ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendered member/common/_header.html.erb (Duration: 3.9ms | Allocations: 836)
+Completed 200 OK in 467ms (Views: 412.0ms | ActiveRecord: 31.5ms | Allocations: 110341)
+
+
+Started GET "/member/password" for 192.168.112.1 at 2020-08-22 18:39:55 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#show as HTML
+Redirected to http://localhost:3000/member/password/edit
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 316)
+
+
+Started GET "/member/password/edit" for 192.168.112.1 at 2020-08-22 18:39:55 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#edit as HTML
+  [1m[36mRamenMember Load (1.4ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 1.5ms | Allocations: 732)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 64)
+Completed 200 OK in 100ms (Views: 88.1ms | ActiveRecord: 1.4ms | Allocations: 5773)
+
+
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 18:40:04 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"ra3scFJhN0/mndK5f9fRJyWMFKRjHgiECHaO5mjzIR47bAOovYcWqzx+51Ait8XuYYZuuqxo/IqNQB/6ggkrfA==", "member_change_password_form"=>"[FILTERED]", "commit"=>"変更"}
+  [1m[36mRamenMember Load (1.9ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/forms/member/change_password_form.rb:16:in `save'
+  [1m[36mRamenMember Update (1.7ms)[0m  [1m[33mUPDATE "ramen_members" SET "hashed_password" = $1, "updated_at" = $2 WHERE "ramen_members"."id" = $3[0m  [["hashed_password", "$2a$12$h9tHODYcSZBJdEbdEyPbGOlhWls23Py2IJIoLJLh54Hd7IhR1zZk6"], ["updated_at", "2020-08-22 18:40:06.152561"], ["id", 1]]
+  ↳ app/forms/member/change_password_form.rb:16:in `save'
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/forms/member/change_password_form.rb:16:in `save'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 1.5ms | Allocations: 595)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 70)
+Completed 200 OK in 2131ms (Views: 90.6ms | ActiveRecord: 6.3ms | Allocations: 12545)
+
+
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 18:40:16 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"PHC1ViPjQpmggxWVDMVgIdNgFJCsQsWYnNb/2qnjxt6zfEsAYfgPojlVVV5zNgcgQQuIB1PvjT61dNcdeKuz+Q==", "member_change_password_form"=>"[FILTERED]", "commit"=>"変更"}
+  [1m[36mRamenMember Load (2.2ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 1.9ms | Allocations: 598)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 89)
+Completed 200 OK in 310ms (Views: 97.4ms | ActiveRecord: 2.2ms | Allocations: 5573)
+
+
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 18:40:30 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"WaqpmBCE0s5ZTJHrx3Q7TPinTStPrTLVv80cQIAnG7TWplfOUp+f9cCa0SC4h1xNaszRvLAAenOWbzSHUW9ukw==", "member_change_password_form"=>"[FILTERED]", "commit"=>"変更"}
+  [1m[36mRamenMember Load (1.9ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 2.1ms | Allocations: 598)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 70)
+Completed 200 OK in 292ms (Views: 79.6ms | ActiveRecord: 1.9ms | Allocations: 5437)
+
+
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 18:40:36 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"lMRuN0/18fU1QMijKr/b3SMBc9Wki8R4T4PrOd1jKbQbyJBhDe68zqyWiGhVTLzcsWrvQlsmjN5mIcP+DCtckw==", "member_change_password_form"=>"[FILTERED]", "commit"=>"変更"}
+  [1m[36mRamenMember Load (2.0ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 2.3ms | Allocations: 598)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 1.1ms | Allocations: 70)
+Completed 200 OK in 321ms (Views: 99.8ms | ActiveRecord: 2.0ms | Allocations: 5424)
+
+
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 18:40:41 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"JP/c7lggGBOpBJ+FqtJ2nba7wkylbQtf/PspnnReXbur8yK4GjtVKDDS307VIRGcJNBe21rAQ/nVWQFZpRYonA==", "member_change_password_form"=>"[FILTERED]", "commit"=>"変更"}
+  [1m[36mRamenMember Load (0.5ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 2.6ms | Allocations: 598)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 333ms (Views: 110.2ms | ActiveRecord: 0.5ms | Allocations: 5412)
+
+
+Started DELETE "/member/session" for 192.168.112.1 at 2020-08-22 18:41:51 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"RFwKn82fbC/mQqlYu/58RWxHYCyJG6SeBb7tU0CfoC7LUPTJj4QhFH+U6ZPEDRtE/iz8u3a27DgsHMWUkdfVCQ=="}
+Redirected to http://localhost:3000/member/login
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms | Allocations: 355)
+
+
+Started GET "/member/login" for 192.168.112.1 at 2020-08-22 18:41:51 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::SessionsController#new as HTML
+  Rendering member/sessions/new.html.erb within layouts/member
+  Rendered member/sessions/new.html.erb within layouts/member (Duration: 0.8ms | Allocations: 288)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 71)
+Completed 200 OK in 148ms (Views: 146.8ms | ActiveRecord: 0.0ms | Allocations: 4055)
+
+
+Started POST "/member/session" for 192.168.112.1 at 2020-08-22 18:41:55 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"VkPleY7IEa6Jd8fbU8Bl1OF8vKf9ndHRdB1Ek4dUgZrZTxsvzNNclRChhxAsMwLVcxcgMAIwmXddv2xUVhz0vQ==", "member_login_form"=>{"email"=>"kanki.m0924@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"ログイン"}
+  [1m[36mRamenMember Load (2.4ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE (LOWER(email) = 'kanki.m0924@gmail.com') LIMIT $1[0m  [["LIMIT", 1]]
+  ↳ app/controllers/member/sessions_controller.rb:15:in `create'
+Redirected to http://localhost:3000/member/images/index
+Completed 302 Found in 7ms (ActiveRecord: 2.4ms | Allocations: 1121)
+
+
+Started GET "/member/images/index" for 192.168.112.1 at 2020-08-22 18:41:55 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::ImagesController#index as HTML
+  Rendering member/images/index.html.erb within layouts/member
+  [1m[36mMember::Post Load (1.9ms)[0m  [1m[34mSELECT "member_posts".* FROM "member_posts" LIMIT $1 OFFSET $2[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  ↳ app/views/member/images/index.html.erb:7
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT COUNT(*) FROM "member_posts"[0m
+  ↳ app/views/member/images/index.html.erb:12
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/images/index.html.erb within layouts/member (Duration: 14.2ms | Allocations: 6501)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mRamenMember Load (0.7ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendered member/common/_header.html.erb (Duration: 2.8ms | Allocations: 704)
+Completed 200 OK in 113ms (Views: 107.5ms | ActiveRecord: 4.5ms | Allocations: 10908)
+
+
+Started GET "/member/password" for 192.168.112.1 at 2020-08-22 18:41:58 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#show as HTML
+Redirected to http://localhost:3000/member/password/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 301)
+
+
+Started GET "/member/password/edit" for 192.168.112.1 at 2020-08-22 18:41:58 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#edit as HTML
+  [1m[36mRamenMember Load (0.5ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 1.6ms | Allocations: 606)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 62)
+Completed 200 OK in 95ms (Views: 91.9ms | ActiveRecord: 0.5ms | Allocations: 4978)
+
+
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 18:42:08 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"lcU1CUeNYgnRKYi+Gdy7iyMpuwM2vEMG9Wypuj19cPYDBNrRqGtD7QvKvVdEvK9CZyPBHfnKtwhwWjim14d6lA==", "member_change_password_form"=>"[FILTERED]", "commit"=>"変更"}
+  [1m[36mRamenMember Load (0.6ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 1.8ms | Allocations: 600)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 70)
+Completed 200 OK in 310ms (Views: 94.0ms | ActiveRecord: 0.6ms | Allocations: 5442)
+
+
+DEPRECATION WARNING: The config.web_console.whitelisted_ips is deprecated and will be ignored in future release of web_console. Please use config.web_console.allowed_ips instead. (called from <main> at /apps/ramen_app/config/environment.rb:5)
+  [1m[35m (4.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mRamenMember Create (7.9ms)[0m  [1m[32mINSERT INTO "ramen_members" ("email", "name", "hashed_password", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "kanki.m0924@gmail.com"], ["name", "まつざき"], ["hashed_password", "$2a$12$6Fc1exDpFIQLFvwhSw7naO5uWO9ztO1uMDmzqovpV/fCFBoBLFlJS"], ["created_at", "2020-08-22 18:42:51.388115"], ["updated_at", "2020-08-22 18:42:51.388115"]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+DEPRECATION WARNING: The config.web_console.whitelisted_ips is deprecated and will be ignored in future release of web_console. Please use config.web_console.allowed_ips instead. (called from <main> at /apps/ramen_app/config/environment.rb:5)
+Started GET "/member/password" for 192.168.112.1 at 2020-08-22 18:48:41 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (2.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Member::PasswordsController#show as HTML
+Redirected to http://localhost:3000/member/password/edit
+Completed 302 Found in 5ms (ActiveRecord: 0.0ms | Allocations: 434)
+
+
+Started GET "/member/password/edit" for 192.168.112.1 at 2020-08-22 18:48:42 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#edit as HTML
+  [1m[36mRamenMember Load (3.5ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 2.1ms | Allocations: 103)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 17.3ms | Allocations: 1789)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 3.7ms | Allocations: 223)
+Completed 200 OK in 258ms (Views: 204.7ms | ActiveRecord: 19.5ms | Allocations: 18110)
+
+
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 18:48:50 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"xMYXYDVAJFY7untmXXiEoqsIWW4LYq8CBE/BRor+/DJLyuk2d1tpbaJsO60ii+OjOWPF+fTP56Qt7emBW7aJFQ==", "member_change_password_form"=>"[FILTERED]", "commit"=>"変更"}
+  [1m[36mRamenMember Load (1.7ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 2.4ms | Allocations: 602)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.6ms | Allocations: 70)
+Completed 200 OK in 739ms (Views: 91.3ms | ActiveRecord: 1.7ms | Allocations: 94265)
+
+
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 18:49:13 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"8nSfR8KWmqP5N7OFQdJaNbrnkcc0K7SAiidsxjuruDZ9eGERgI3XmGDh804+IT00KIwNUMuG/CajhUQB6uPNEQ==", "member_change_password_form"=>"[FILTERED]", "commit"=>"変更"}
+  [1m[36mRamenMember Load (2.0ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 1.5ms | Allocations: 599)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 70)
+Completed 200 OK in 301ms (Views: 84.2ms | ActiveRecord: 2.0ms | Allocations: 5441)
+
+
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 18:49:23 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"hYP0+IyxiAq8UhnUariZ9/lAJXpr3W77HaPJaZh5tKMKjwquzqrFMSWEWR8VS/72ayu57ZRwJl00AeGuSTHBhA==", "member_change_password_form"=>"[FILTERED]", "commit"=>"変更"}
+  [1m[36mRamenMember Load (2.3ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 1.9ms | Allocations: 598)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 70)
+Completed 200 OK in 293ms (Views: 76.5ms | ActiveRecord: 2.3ms | Allocations: 5426)
+
+
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 18:49:27 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"6IjfIRxk6pG6kWkZXCcxywoEfHw/wG4OBUnOivL7bi1nhCF3Xn+nqiNHKdIj1FbKmG/g68BtJqgs6+ZNI7MbCg==", "member_change_password_form"=>"[FILTERED]", "commit"=>"変更"}
+  [1m[36mRamenMember Load (2.1ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 1.6ms | Allocations: 598)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 308ms (Views: 95.7ms | ActiveRecord: 2.1ms | Allocations: 5420)
+
+
+Started GET "/member/password" for 192.168.112.1 at 2020-08-22 19:02:47 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#show as HTML
+Redirected to http://localhost:3000/member/password/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 325)
+
+
+Started GET "/member/password/edit" for 192.168.112.1 at 2020-08-22 19:02:49 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#edit as HTML
+  [1m[36mRamenMember Load (7.4ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 2.7ms | Allocations: 731)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 65)
+Completed 200 OK in 182ms (Views: 120.6ms | ActiveRecord: 7.9ms | Allocations: 9970)
+
+
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 19:02:57 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"QUZt1bELCXlumoSx/jAbNODgyuik32cZ6LCZcK3KBTrOSpOD8xBEQvdMxHqBw3w1cotWf1tyL7/BErG3fIJwHQ==", "member_change_password_form"=>"[FILTERED]", "commit"=>"変更"}
+  [1m[36mRamenMember Load (1.7ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/forms/member/change_password_form.rb:10:in `save'
+  [1m[36mRamenMember Update (1.7ms)[0m  [1m[33mUPDATE "ramen_members" SET "hashed_password" = $1, "updated_at" = $2 WHERE "ramen_members"."id" = $3[0m  [["hashed_password", "$2a$12$.gb8Ow3RuXyatR28K5H13.gfTMGF5QsXq..StGLbeEGmYBAKXq2O."], ["updated_at", "2020-08-22 19:02:58.061294"], ["id", 1]]
+  ↳ app/forms/member/change_password_form.rb:10:in `save'
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/forms/member/change_password_form.rb:10:in `save'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 1.1ms | Allocations: 595)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 309ms (Views: 90.5ms | ActiveRecord: 6.2ms | Allocations: 7544)
+
+
+Started GET "/member/password" for 192.168.112.1 at 2020-08-22 19:03:07 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#show as HTML
+Redirected to http://localhost:3000/member/password/edit
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms | Allocations: 346)
+
+
+Started GET "/member/password/edit" for 192.168.112.1 at 2020-08-22 19:03:07 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#edit as HTML
+  [1m[36mRamenMember Load (1.2ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 2.3ms | Allocations: 731)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 84)
+Completed 200 OK in 213ms (Views: 129.2ms | ActiveRecord: 34.1ms | Allocations: 10362)
+
+
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 19:03:13 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"nyMY16kOz4HZvezNZfh6AiLofb3xTy//BsZ8jqmRopoQL+aB6xWCukBrrAYaCx0DsIPhKg7iZ1kvZFRJeNnXvQ==", "member_change_password_form"=>"[FILTERED]", "commit"=>"変更"}
+  [1m[36mRamenMember Load (2.9ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/forms/member/change_password_form.rb:16:in `save'
+  [1m[36mRamenMember Update (1.3ms)[0m  [1m[33mUPDATE "ramen_members" SET "hashed_password" = $1, "updated_at" = $2 WHERE "ramen_members"."id" = $3[0m  [["hashed_password", "$2a$12$YgVCkSSspSBL1bvOElJWmOHR9VDdJXEPNLLFfVce7tvstjLF7UvL6"], ["updated_at", "2020-08-22 19:03:14.393828"], ["id", 1]]
+  ↳ app/forms/member/change_password_form.rb:16:in `save'
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/forms/member/change_password_form.rb:16:in `save'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 1.3ms | Allocations: 596)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 70)
+Completed 200 OK in 508ms (Views: 85.9ms | ActiveRecord: 5.1ms | Allocations: 7526)
+
+
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 19:03:19 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"u5C+kFcNlTmR8U4xeCm9ig4G+yVhBpYzt+eRWdnbqiQ0nEDGFRbYAggnDvoH2tqLnG1nsp6r3pWeRbmeCJPfAw==", "member_change_password_form"=>"[FILTERED]", "commit"=>"変更"}
+  [1m[36mRamenMember Load (1.7ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/forms/member/change_password_form.rb:16:in `save'
+  [1m[36mRamenMember Update (1.4ms)[0m  [1m[33mUPDATE "ramen_members" SET "hashed_password" = $1, "updated_at" = $2 WHERE "ramen_members"."id" = $3[0m  [["hashed_password", "$2a$12$ys2Gn780dqAd7ZW1G3VjAuWzInJDGejkwH/.E5oSUYtqOmNg9M/pO"], ["updated_at", "2020-08-22 19:03:19.429702"], ["id", 1]]
+  ↳ app/forms/member/change_password_form.rb:16:in `save'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/forms/member/change_password_form.rb:16:in `save'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 1.5ms | Allocations: 595)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 502ms (Views: 84.8ms | ActiveRecord: 4.2ms | Allocations: 7447)
+
+
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 19:03:27 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"tYbb1SkAo+anNABv9XTilJRV34NfYzWoIFLDqvO4D+M6iiWDaxvu3T7iQKSKh4WVBj5DFKDOfQ4J8OttIvB6xA==", "member_change_password_form"=>"[FILTERED]", "commit"=>"変更"}
+  [1m[36mRamenMember Load (1.8ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 1.1ms | Allocations: 598)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 89)
+Completed 200 OK in 280ms (Views: 70.4ms | ActiveRecord: 1.8ms | Allocations: 5459)
+
+
+Started PATCH "/member/password" for 192.168.112.1 at 2020-08-22 19:03:35 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#update as HTML
+  Parameters: {"authenticity_token"=>"cu5CUbbqckcvQ57l0ZCMINpjjdfabtfG7xOk3O0s7FD94rwH9PE/fLaV3i6uY+shSAgRQCXDn2DGsYwbPGSZdw==", "member_change_password_form"=>"[FILTERED]", "commit"=>"変更"}
+  [1m[36mRamenMember Load (0.6ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/forms/member/change_password_form.rb:16:in `save'
+  [1m[36mRamenMember Update (1.8ms)[0m  [1m[33mUPDATE "ramen_members" SET "hashed_password" = $1, "updated_at" = $2 WHERE "ramen_members"."id" = $3[0m  [["hashed_password", "$2a$12$6rHQami55DRcWnTZfkVPYeq.k9g/7XSm8E.q6dD9C4qcELKQzHcHm"], ["updated_at", "2020-08-22 19:03:36.166170"], ["id", 1]]
+  ↳ app/forms/member/change_password_form.rb:16:in `save'
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/forms/member/change_password_form.rb:16:in `save'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 1.1ms | Allocations: 595)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.1ms | Allocations: 70)
+Completed 200 OK in 486ms (Views: 71.4ms | ActiveRecord: 3.5ms | Allocations: 7411)
+
+
+Started GET "/member/images/index" for 192.168.112.1 at 2020-08-22 19:03:59 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::ImagesController#index as HTML
+  Rendering member/images/index.html.erb within layouts/member
+  [1m[36mMember::Post Load (3.1ms)[0m  [1m[34mSELECT "member_posts".* FROM "member_posts" LIMIT $1 OFFSET $2[0m  [["LIMIT", 15], ["OFFSET", 0]]
+  ↳ app/views/member/images/index.html.erb:7
+  [1m[35m (2.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "member_posts"[0m
+  ↳ app/views/member/images/index.html.erb:12
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/images/index.html.erb within layouts/member (Duration: 49.3ms | Allocations: 14924)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mRamenMember Load (0.4ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendered member/common/_header.html.erb (Duration: 2.0ms | Allocations: 710)
+Completed 200 OK in 119ms (Views: 88.3ms | ActiveRecord: 14.3ms | Allocations: 21597)
+
+
+Started GET "/member/posts/new" for 192.168.112.1 at 2020-08-22 19:04:03 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PostsController#new as HTML
+  Rendering member/posts/new.html.erb within layouts/member
+  Rendered member/posts/_form.html.erb (Duration: 60.3ms | Allocations: 12829)
+  Rendered common/_footer.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered member/posts/new.html.erb within layouts/member (Duration: 66.6ms | Allocations: 13233)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mRamenMember Load (0.3ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendered member/common/_header.html.erb (Duration: 2.2ms | Allocations: 704)
+Completed 200 OK in 138ms (Views: 124.3ms | ActiveRecord: 8.4ms | Allocations: 17922)
+
+
+Started GET "/member/posts" for 192.168.112.1 at 2020-08-22 19:04:06 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PostsController#index as HTML
+  Rendering member/posts/index.html.erb within layouts/member
+  [1m[36mMember::Post Load (1.8ms)[0m  [1m[34mSELECT "member_posts".* FROM "member_posts" LIMIT $1 OFFSET $2[0m  [["LIMIT", 5], ["OFFSET", 0]]
+  ↳ app/views/member/posts/index.html.erb:20
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT COUNT(*) FROM "member_posts"[0m
+  ↳ app/views/member/posts/index.html.erb:33
+  Rendered common/_footer.html.erb (Duration: 0.0ms | Allocations: 6)
+  Rendered member/posts/index.html.erb within layouts/member (Duration: 17.5ms | Allocations: 6218)
+[Webpacker] Everything's up-to-date. Nothing to do
+  [1m[36mRamenMember Load (0.4ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendered member/common/_header.html.erb (Duration: 2.2ms | Allocations: 688)
+Completed 200 OK in 101ms (Views: 91.1ms | ActiveRecord: 3.7ms | Allocations: 10736)
+
+
+Started GET "/member/password" for 192.168.112.1 at 2020-08-22 19:04:08 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#show as HTML
+Redirected to http://localhost:3000/member/password/edit
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms | Allocations: 308)
+
+
+Started GET "/member/password/edit" for 192.168.112.1 at 2020-08-22 19:04:08 +0000
+Cannot render console from 192.168.112.1! Allowed networks: 172.16.0.0/172.31.255.255, 127.0.0.0/127.255.255.255, ::1
+Processing by Member::PasswordsController#edit as HTML
+  [1m[36mRamenMember Load (0.4ms)[0m  [1m[34mSELECT "ramen_members".* FROM "ramen_members" WHERE "ramen_members"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/member/base.rb:5:in `login_member_now'
+  Rendering member/passwords/edit.html.erb within layouts/member
+  Rendered common/_footer.html.erb (Duration: 0.1ms | Allocations: 6)
+  Rendered member/passwords/edit.html.erb within layouts/member (Duration: 2.0ms | Allocations: 614)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered member/common/_header.html.erb (Duration: 0.2ms | Allocations: 64)
+Completed 200 OK in 78ms (Views: 75.1ms | ActiveRecord: 0.4ms | Allocations: 4991)
+
+

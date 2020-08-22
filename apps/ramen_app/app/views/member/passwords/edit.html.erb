@@ -1,25 +1,25 @@
 <div class="new_inner">
-<h1 class="password_title">パスワードの変更</h1>
+    <h1 class="password_title">パスワードの変更</h1>
 
-<div id="password-form">
-  <%= form_with model: @change_password, url: :member_password, method: :patch do |f| %>
-    <div class="password_content">
-        <%= f.label :current_password, "現在のパスワード", class: "password_label" %>
-        <%= f.password_field :current_password, class: "new_password", required: true %>
+    <div id="password-form">
+    <%= form_with model: @change_password_form, url: :member_password, method: :patch do |f| %>
+        <div class="password_content">
+            <%= f.label :current_password, "現在のパスワード", class: "password_label" %>
+            <%= f.password_field :current_password, class: "new_password", required: true %>
+        </div>
+        <div class="password_content">
+            <%= f.label :new_password, "新しいパスワード", class: "password_label" %>
+            <%= f.password_field :new_password, class: "new_password", required: true %>
+        </div>
+        <div class="password_content">
+            <%= f.label :confirm_new_password, "新しいパスワード(確認)", class: "password_label" %>
+            <%= f.password_field :confirmation_new_password, class: "new_password", required: true %>
+        </div>
+        <div class="actions">
+            <%= f.submit "変更", class: "new_post_button" %>
+            <%= link_to "キャンセル", :member_password %>
+        </div>
+        <% end %>
     </div>
-    <div class="password_content">
-        <%= f.label :new_password, "新しいパスワード", class: "password_label" %>
-        <%= f.password_field :new_password, class: "new_password", required: true %>
-    </div>
-    <div class="password_content">
-        <%= f.label :confirm_new_password, "新しいパスワード(確認)", class: "password_label" %>
-        <%= f.password_field :confirmation_new_password, class: "new_password", required: true %>
-    </div>
-    <div class="actions">
-        <%= f.submit "変更", class: "new_post_button" %>
-        <%= link_to "キャンセル", :member_password %>
-    </div>
-    <% end %>
-</div>
 </div>
 <%= render "common/footer" %>

@@ -4,13 +4,13 @@ class Member::PasswordsController < Member::Base
     end
 
     def edit
-        @change_password = Member::ChangePassword.new(object: login_member_now)
+        @change_password_form = Member::ChangePasswordForm.new(object: login_member_now)
     end
 
     def update
-        @change_password = Member::ChangePassword.new(ramen_member_params)
-        @change_password.object = login_member_now
-        if @change_password.save
+        @change_password_form = Member::ChangePasswordForm.new(ramen_member_params)
+        @change_password_form.object = login_member_now
+        if @change_password_form.save
             flash.notice ="パスワードを変更しました。"
             render action: "edit"
         else
@@ -20,7 +20,7 @@ class Member::PasswordsController < Member::Base
     end
 
     private def ramen_member_params
-        params.require(:member_change_password).permit(
+        params.require(:member_change_password_form).permit(
             :current_password, :new_password, :confirmation_new_password
         )
     end
