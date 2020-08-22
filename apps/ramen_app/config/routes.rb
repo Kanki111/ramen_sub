@@ -3,7 +3,7 @@ Rails.application.routes.draw do
     resources :posts
   end
   namespace :member do
-    root "top#index"
+    root "sessions#new"
     get "images/index" => "images#index"
     get "login" => "sessions#new", as: :login
     post "session" => "sessions#create", as: :session

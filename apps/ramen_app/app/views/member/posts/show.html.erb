@@ -22,6 +22,11 @@
       お店の場所：<%= @member_post.place %>
     </td>
   </tr>
+  <tr>
+  <td class="show_content">
+    コメント：<%= @member_post.content %>
+  </td>
+</tr>
   </tbody>
 </table>
 
@@ -29,3 +34,4 @@
 <%= link_to 'Edit', edit_member_post_path(@member_post) %> |
 <%= link_to 'Back', member_posts_path %>
 </div>
+<%= render "common/footer" %>

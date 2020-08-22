@@ -1,6 +1,5 @@
 class Member::PostsController < Member::Base
   before_action :set_member_post, only: [:show, :edit, :update, :destroy]
-  before_action :authenticate_user, only: [:show, :edit, :update, :destroy]
 
   # GET /member/posts
   # GET /member/posts.json
@@ -71,7 +70,7 @@ class Member::PostsController < Member::Base
 
     # Only allow a list of trusted parameters through.
     def member_post_params
-      params.require(:member_post).permit(:title, :place, :ramen_type, :image)
+      params.require(:member_post).permit(:title, :place, :ramen_type, :image, :content)
     end
 
     def permit_params
