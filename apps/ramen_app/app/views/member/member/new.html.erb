@@ -1,0 +1,36 @@
+<h1アカウントの作成</h1>
+<div id="formWrap">
+  <%= form_with model: @members, local: true do |f| %>
+  <div class="formTable">
+  <table class="formTableContent">
+  <tbody>
+    <tr>
+    <td>
+        <%= f.text_field :email, :placeholder => "Enter your email..." %>
+    </td>
+    </tr>
+    <tr>
+    <td>
+        <%= f.password_field :password, :placeholder => "Enter your password..." %>
+    </td>
+    </tr>
+    <tr>
+    <td>
+        <%= f.text_field :name, :placeholder => "Enter your account name" %>
+    </td>
+    </tr>
+  </tbody>
+  </table>
+    <div>
+      <%= f.submit "新規作成" %>
+    </div>
+  </div>
+  <% end %>
+</div>
+</div>
+<footer>
+
+  <div class="copy_right">
+    <p>  Copyright © 2020 MATSUZAKI_KANKI</p>
+  </div>
+</footer>

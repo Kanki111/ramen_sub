@@ -16,7 +16,7 @@ class Member::SessionsController < Member::Base
         end
         if ramen_member
             session[:ramen_member_id] = ramen_member.id
-            flash.notice = "ログインに成功しました。"
+            flash.notice = "こんにちは #{login_member_now.name}さん"
             redirect_to :member_images_index
         else
             flash.now.alert = "メールアドレスまたはパスワードが違います。"

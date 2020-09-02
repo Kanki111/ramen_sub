@@ -1,0 +1,30 @@
+<h1 class="account_name"><%=  "#{login_member_now.name}さんのアカウント情報"%></h1>
+<table class="post_table">
+  <thead>
+    <tr>
+      <th class="show_image">
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td class="show_content">
+      アカウントの名前：<%= @ramen_member.name %>
+    </td>
+  </tr>
+  <tr>
+    <td class="show_content">
+      メールアドレス：<%= @ramen_member.email %>
+    </td>
+  </tr>
+  <tr>
+  <td class="show_content">
+    パスワード：※※※※※※※※※
+  </td>
+</tr>
+  </tbody>
+</table>
+
+</div>
+</div>
+<%= render "common/footer" %>

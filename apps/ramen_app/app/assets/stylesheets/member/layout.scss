@@ -170,3 +170,36 @@ div.field_with_errors {
     label{ color: #cc0000; }
     input { background-color: #ffcccc;}
 }
+
+.comment_form{
+    margin: 160px auto;
+    background-color: #cccccc;
+    padding: 64px 112px;
+}
+.comment_title{
+    text-align: center;
+    color: #00A0E2;
+}
+.comment_label{
+    display: block;
+    padding: 10px 0px 10px 10px;
+    width: 100%;
+    height: 24px;
+}
+.comment_field{
+    width: 100%;
+    background-color: #ffffff;
+    height: 32px;
+    border: 2px solid #cccccc;
+}
+#trix-toolbar-1{
+    display: none;
+}
+.tag a{
+    color: #ffffff;
+}
+.account_name{
+    color: #00A0E2;
+    text-align: center;
+    margin-top: 80px;
+}

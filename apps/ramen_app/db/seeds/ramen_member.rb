@@ -3,3 +3,8 @@ RamenMember.create!(
     name: "まつざき",
     password: "password",
 )
+RamenMember.create!(
+    email: "guest@gmail.com",
+    name: "ゲスト",
+    password: "guest",
+)

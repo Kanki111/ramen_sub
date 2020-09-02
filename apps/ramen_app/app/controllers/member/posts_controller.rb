@@ -11,6 +11,8 @@ class Member::PostsController < Member::Base
   # GET /member/posts/1
   # GET /member/posts/1.json
   def show
+    @member_post =Member::Post.find(params[:id])
+    @comment = Comment.new
   end
 
   # GET /member/posts/new
@@ -24,6 +26,7 @@ class Member::PostsController < Member::Base
 
   # POST /member/posts
   # POST /member/posts.json
+
   def create
     @member_post = Member::Post.new(member_post_params)
 
@@ -36,7 +39,15 @@ class Member::PostsController < Member::Base
         format.json { render json: @member_post.errors, status: :unprocessable_entity }
       end
     end
+    @comment = Comment.new
+    if @comment.update(comment_params)
+        redirect_to member_post_show(@member_post), notice: "投稿されました。"
+    end
   end
+
+def comment_params
+  params.require(:comment).permit(:comment, :name, :member_post_id)
+end
 
   # PATCH/PUT /member/posts/1
   # PATCH/PUT /member/posts/1.json
