@@ -10,9 +10,13 @@ Rails.application.routes.draw do
     post "session" => "sessions#create", as: :session
     delete "session" => "sessions#destroy"
     resource :password, only: [ :show, :edit, :update]
-    get "member/new" => "member#new"
-    get "member/show" => "member#show"
-    resources :posts
+    get "ramen_member/new" => "member#new"
+    post "ramen_member/new" => "member#create"
+    get "ramen_member/show" => "member#show"
+    resources :comments, only: [:create]
+    resources :posts do
+      resources :comments, only: [:create]
+    end
   end
 
   namespace :manager do

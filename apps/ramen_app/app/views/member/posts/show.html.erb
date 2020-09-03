@@ -30,22 +30,6 @@
   </tbody>
 </table>
 <hr>
-<div class="comment_form">
-  <h2 class="comment_title">コメントを書く</h2>
-  <%= form_with model: [@member_posts, @comment], local: true do |f| %>
-    <%= f.hidden_field :member_post_id, { value: @member_post.id } %>
-  <div>
-    <span class="comment_label">Name: </span><%= f.text_field :name, class: "comment_field" %>
-  </div>
-  <div>
-  <span class="comment_label">Content: </span><%= f.rich_text_area :content %>
-  </div>
-  <div>
-  <div class="actions">
-  <%= f.submit :投稿をする, class: "new_post_button" %>
-</div>
-  </div>
-  <% end %>
 </div>
 </div>
 <%= render "common/footer" %>

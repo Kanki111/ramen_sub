@@ -1,20 +1,29 @@
-<h1アカウントの作成</h1>
+<h1 class="account_name">アカウントの新規作成</h1>
 <div id="formWrap">
-  <%= form_with model: @members, local: true do |f| %>
+  <%= form_with model: @ramen_member, url: member_ramen_member_new_url, local: true do |f| %>
   <div class="formTable">
   <table class="formTableContent">
   <tbody>
     <tr>
+    <td class="new_account_label">
+      メールアドレス:
+    </td>
     <td>
         <%= f.text_field :email, :placeholder => "Enter your email..." %>
     </td>
     </tr>
     <tr>
+    <td class="new_account_label">
+      パスワード:
+    </td>
     <td>
         <%= f.password_field :password, :placeholder => "Enter your password..." %>
     </td>
     </tr>
     <tr>
+    <td class="new_account_label">
+        アカウント名:
+    </td>
     <td>
         <%= f.text_field :name, :placeholder => "Enter your account name" %>
     </td>
@@ -22,7 +31,7 @@
   </tbody>
   </table>
     <div>
-      <%= f.submit "新規作成" %>
+      <%= f.submit "新規作成", class: "new_account_btn"%>
     </div>
   </div>
   <% end %>
