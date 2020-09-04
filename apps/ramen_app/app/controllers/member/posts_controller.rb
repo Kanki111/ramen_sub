@@ -12,8 +12,7 @@ class Member::PostsController < Member::Base
   # GET /member/posts/1.json
   def show
     @member_post =Member::Post.find(params[:id])
-    @comments = @member_post.comments
-    @comment = Comment.new
+
   end
 
   # GET /member/posts/new
