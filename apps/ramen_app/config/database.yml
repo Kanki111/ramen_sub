@@ -83,6 +83,4 @@ test:
 #
 production:
   <<: *default
-  adapter: postgresql
-  encoding: unicode
-  pool: 5
+      url: <%= ENV['postgresql-slippery-33328'] %>
