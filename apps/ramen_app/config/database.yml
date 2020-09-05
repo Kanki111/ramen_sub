@@ -83,6 +83,6 @@ test:
 #
 production:
   <<: *default
-  database: ramen_app_production
-  username: postgres
-  password: <%= ENV['RAMEN_APP_DATABASE_PASSWORD'] %>
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
